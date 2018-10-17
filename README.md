@@ -1,8 +1,8 @@
 # Installation Steps:
     1. clone project in system
     2. cd inside Assignment
-    3. If you have angular cli installed globally run : ng serve 
-    4. If not installed then install first by: npm install -g @angular/cli , repeat step 3.
+    3. If you have angular cli installed globally then run : ng serve 
+    4. If not installed then install first by: npm install -g @angular/cli and repeat step 3.
 
 # Project Credentials
    ### Username: vinay , Password: vinay
@@ -16,7 +16,7 @@
     It wil show only women's category items
 ## Flow of Project
     1. Click on the Image of any item
-    2. select the no of items
+    2. select the no of items you want to buy
     3. Add to cart
     4. Item will be added to cart
     5. If item already added the current item count will be added in to previous count.
