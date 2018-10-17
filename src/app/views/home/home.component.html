@@ -1,0 +1,47 @@
+<div class="row" *ngIf="this.items.length">
+  <carousel class="crsl">
+    <slide>
+      <div class="text-center py-5 bg-dark text-white">
+        <h2>First custom content</h2>
+        <div class="lead">
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+    </slide>
+    <slide>
+      <div class="text-center py-5 bg-dark text-white">
+        <h2>Second custom content</h2>
+        <div class="lead">
+          <h3>Second slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+    </slide>
+    <slide>
+      <div class="text-center py-5 bg-dark text-white">
+        <h2>Third custom content</h2>
+        <div class="lead">
+          <h3>Third slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum. </p>
+        </div>
+      </div>
+    </slide>
+  </carousel>
+</div>
+<div class="row" style="margin-top: 1%">
+  <div *ngFor="let item of items" class="col-lg-6 col-md-6 col-sm-12">
+    <!-- <div class="card">
+      <div>
+        <img (click)="onImgClick(item)" src="assets/img/{{item.imgUrl}}" style="width: 100%">
+       <span (click)="onImgClick(item)"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </span> 
+      </div>
+    </div> -->
+    <div class="card">
+        <img class="card-img-top" (click)="onImgClick(item)" src="assets/img/{{item.imgUrl}}"  alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{item.name}}</h5>
+        </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,59 @@
+<div class="row" style="margin-top: 1%">
+  <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="card">
+
+      <carousel class="crsl">
+        <slide>
+          <div class="text-center py-5 bg-dark text-white">
+            <h2>First custom content</h2>
+            <div class="lead">
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class="text-center py-5 bg-dark text-white">
+            <h2>Second custom content</h2>
+            <div class="lead">
+              <h3>Second slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class="text-center py-5 bg-dark text-white">
+            <h2>Third custom content</h2>
+            <div class="lead">
+              <h3>Third slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum. </p>
+            </div>
+          </div>
+        </slide>
+      </carousel>
+      <div class="itm">
+        <h3>{{selectedItem.name | uppercase}}</h3>
+      </div>
+      <form #reqItemForm="ngForm" novalidate>
+        <div style="padding: 10px;" class="row">
+          <div class="col-sm-12 col-md-6">
+            <button class="btn btn-primary btn-lg" style="margin-top: 10%" [disabled]="reqItemForm.invalid" [class.cursor-restriction]="reqItemForm.invalid"
+            (click)="addToCart()">
+              ADD To Cart </button>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="form-group">
+              <label for="reqItems">No.of Items</label>
+              <span style="color:red;" [hidden]="!(reqItems?.invalid)">*</span>
+              <input type="number" class="form-control" name="noOfItems" placeholder="Enter your No" [(ngModel)]="noOfItems" [ngClass]="{
+                        'is-invalid': reqItems?.invalid && (reqItems?.dirty || reqItems?.touched),
+                        'is-valid': reqItems?.valid && (reqItems?.dirty ||reqItems?.touched)
+                   }" #reqItems="ngModel" pattern="^[1-9][0-9]*$" required>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>
