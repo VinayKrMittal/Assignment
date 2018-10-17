@@ -11,9 +11,9 @@
  ## Home
     It Shows all the category of items
  ## Men
-    It Will show only Men's Category items
+    It will show only Men's Category items
 ## Women
-    It wil  show only women's category items
+    It wil show only women's category items
 ## Flow of Project
     1. Click on the Image of any item
     2. select the no of items
@@ -32,4 +32,9 @@
       }]
 # All the data stored in session storage          
 
+## Steps to make Production Build:
+  1. cd in to Project
+  2. run command: ng build --prod --build-optimizer
+  3. A dist folder will be created inside your project
+  4. You can run it with nginx,http-server or any other server.
     
