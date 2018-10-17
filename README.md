@@ -1,8 +1,9 @@
 # Installation Steps:
     1. clone project in system
     2. cd inside Assignment
-    3. If you have angular cli installed globally then run : ng serve 
-    4. If not installed then install first by: npm install -g @angular/cli and repeat step 3.
+    3. run command:  npm install
+    4 If you have angular cli installed globally then run : ng serve 
+    5. If not installed then install first by: npm install -g @angular/cli and repeat step 3.
 
 # Project Credentials
    ### Username: vinay , Password: vinay
